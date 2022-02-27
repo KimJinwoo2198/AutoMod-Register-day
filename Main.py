@@ -2,7 +2,7 @@ import discord
 import time
 import json
 
-token = 'OTMyNTg1NDE3NjYyOTM1MDUw.YeVH2g.jSm80oNEbzKBJijngHTdCzToRog'
+token = 'token'
 
 intents = discord.Intents.default()
 intents.members = True
