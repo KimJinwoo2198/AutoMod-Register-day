@@ -10,7 +10,7 @@ intents.members = True
 client = discord.Client(intents=intents)
 
 @client.event
-async def on_connect():
+async def on_ready():
     with open('./setting.json', 'r') as d:
         data = json.load(d)
         setting = data['days']
