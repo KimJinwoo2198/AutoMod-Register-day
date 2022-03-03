@@ -55,7 +55,7 @@ async def on_message(message):
                 d = data['days']
                 await message.channel.send(f'It has been revised to `d`')
 
-    if message.content == '!settingv':
+    if message.content == '!set':
         if message.author.guild_permissions.manage_messages:
             with open('./setting.json', 'r') as d:
                 data = json.load(d)
