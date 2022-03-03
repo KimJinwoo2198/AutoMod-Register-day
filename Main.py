@@ -13,8 +13,7 @@ client = discord.Client(intents=intents)
 async def on_ready():
     with open('./setting.json', 'r') as d:
         data = json.load(d)
-        setting = data['days']
-        setting = int(setting)
+        setting = int(data['days'])
 
 @client.event
 async def on_member_join(member):
