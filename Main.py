@@ -4,9 +4,9 @@ import json
 
 token = 'token' # Set your token
 
-intents = discord.Intents.default()
-intents.members = True 
-client = discord.Client(intents=intents) # enalbe intents
+intents = discord.Intents.default() # # enable intents
+intents.members = True # enable intents
+client = discord.Client(intents=intents) # enable intents
 
 @client.event
 async def on_ready():
