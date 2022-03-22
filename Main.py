@@ -5,8 +5,8 @@ import json
 token = 'token'
 
 intents = discord.Intents.default()
-intents.members = True
-client = discord.Client(intents=intents)
+intents.members = True 
+client = discord.Client(intents=intents) # enalbe intents
 
 @client.event
 async def on_ready():
